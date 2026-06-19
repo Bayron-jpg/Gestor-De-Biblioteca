@@ -39,4 +39,4 @@ server:
 # WebClient Config
 services:
   bibliotecarios:
-    url: http://localhost:8084
+    url: http://bibliotecario-service:8084
