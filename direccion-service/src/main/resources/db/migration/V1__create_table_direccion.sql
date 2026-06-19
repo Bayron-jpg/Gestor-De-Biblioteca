@@ -1,0 +1,6 @@
+CREATE TABLE direccion (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    direccion VARCHAR(40) NOT NULL,
+    comuna VARCHAR(40) NOT NULL,
+    region VARCHAR(40) NOT NULL
+);
