@@ -144,10 +144,10 @@ Desarrollado con Java 21 y Spring Boot.
    cd Gestor-De-Biblioteca
    ```
 2. **Levantar todo el sistema**
-   - `docker compose up --build`
    - `docker compose down -v (para limpiar)`
+   - `docker compose up --build`
 
-3. **Verificar el sistema**
+4. **Verificar el sistema**
 - Eureka Dashboard: http://localhost:8761
 - API Gateway: http://localhost:8080
 
