@@ -39,6 +39,6 @@ server:
 # WebClient Config
 services:
   autores:
-    url: http://localhost:8081
+    url: http://autor-service:8081
   generos:
-    url: http://localhost:8082
+    url: http://genero-service:8082
