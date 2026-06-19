@@ -1,0 +1,5 @@
+CREATE TABLE piso (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    numero VARCHAR(3) NOT NULL,
+    descripcion VARCHAR(255) NOT NULL
+);
