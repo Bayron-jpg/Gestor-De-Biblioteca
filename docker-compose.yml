@@ -1,0 +1,250 @@
+version: '3.8'
+
+services:
+  # --- 1 Infraestructura ---
+  
+  db-mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: biblioteca_db
+    ports:
+      - "3306:3306"
+    networks:
+      - biblioteca-net
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-proot"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    volumes:
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+
+  eureka:
+    build: ./eureka
+    ports:
+      - "8761:8761"
+    networks:
+      - biblioteca-net
+
+  # --- 2 Microservicios ---
+
+  autor-service:
+    build: ./autor-service
+    ports:
+      - "8081:8081"
+    restart: on-failure
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db-mysql:3306/db_autores_dev?useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka:8761/eureka/
+    depends_on:
+      db-mysql:
+        condition: service_healthy
+      eureka:
+        condition: service_started
+    networks:
+      - biblioteca-net
+
+  bibliotecario-service:
+    build: ./bibliotecario-service
+    ports:
+      - "8084:8084"
+    restart: on-failure
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db-mysql:3306/db_bibliotecarios_dev?useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka:8761/eureka/
+    depends_on:
+      db-mysql:
+        condition: service_healthy
+      eureka:
+        condition: service_started
+    networks:
+      - biblioteca-net
+
+  turno-service:
+    build: ./turno-service
+    ports:
+      - "8085:8085"
+    restart: on-failure
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db-mysql:3306/db_turnos_dev?useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka:8761/eureka/
+    depends_on:
+      db-mysql:
+        condition: service_healthy
+      eureka:
+        condition: service_started
+    networks:
+      - biblioteca-net
+
+  genero-service:
+    build: ./genero-service
+    ports:
+      - "8082:8082"
+    restart: on-failure
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db-mysql:3306/db_generos_dev?useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka:8761/eureka/
+    depends_on:
+      db-mysql:
+        condition: service_healthy
+      eureka:
+        condition: service_started
+    networks:
+      - biblioteca-net
+
+  libro-service:
+    build: ./libro-service
+    ports:
+      - "8083:8083"
+    restart: on-failure
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db-mysql:3306/db_libros_dev?useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka:8761/eureka/
+    depends_on:
+      db-mysql:
+        condition: service_healthy
+      eureka:
+        condition: service_started
+    networks:
+      - biblioteca-net
+
+  telefono-service:
+    build: ./telefono-service
+    ports:
+      - "8086:8086"
+    restart: on-failure
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db-mysql:3306/db_telefonos_dev?useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka:8761/eureka/
+    depends_on:
+      db-mysql:
+        condition: service_healthy
+      eureka:
+        condition: service_started
+    networks:
+      - biblioteca-net
+
+  direccion-service:
+    build: ./direccion-service
+    ports:
+      - "8087:8087"
+    restart: on-failure
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db-mysql:3306/db_direcciones_dev?useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka:8761/eureka/
+    depends_on:
+      db-mysql:
+        condition: service_healthy
+      eureka:
+        condition: service_started
+    networks:
+      - biblioteca-net
+
+  usuario-service:
+    build: ./usuario-service
+    ports:
+      - "8088:8088"
+    restart: on-failure
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db-mysql:3306/db_usuarios_dev?useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka:8761/eureka/
+    depends_on:
+      db-mysql:
+        condition: service_healthy
+      eureka:
+        condition: service_started
+    networks:
+      - biblioteca-net
+
+  piso-service:
+    build: ./piso-service
+    ports:
+      - "8089:8089"
+    restart: on-failure
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db-mysql:3306/db_pisos_dev?useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka:8761/eureka/
+    depends_on:
+      db-mysql:
+        condition: service_healthy
+      eureka:
+        condition: service_started
+    networks:
+      - biblioteca-net
+
+  sala-service:
+    build: ./sala-service
+    ports:
+      - "8090:8090"
+    restart: on-failure
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db-mysql:3306/db_salas_dev?useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka:8761/eureka/
+    depends_on:
+      db-mysql:
+        condition: service_healthy
+      eureka:
+        condition: service_started
+    networks:
+      - biblioteca-net
+
+  # --- 3 API Gateway ---
+
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "8080:8080"
+    restart: on-failure
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka:8761/eureka/
+    depends_on:
+      eureka:
+        condition: service_started
+      autor-service:
+        condition: service_started
+      bibliotecario-service:
+        condition: service_started
+      turno-service:
+        condition: service_started
+      genero-service:
+        condition: service_started
+      libro-service:
+        condition: service_started
+      telefono-service:
+        condition: service_started
+      direccion-service:
+        condition: service_started
+      usuario-service:
+        condition: service_started
+      piso-service:
+        condition: service_started
+      sala-service:
+        condition: service_started
+    networks:
+      - biblioteca-net
+
+networks:
+  biblioteca-net:
+    driver: bridge
