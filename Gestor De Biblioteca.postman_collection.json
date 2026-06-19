@@ -1,0 +1,4897 @@
+{
+  "info": {
+    "_postman_id": "d550ea3f-356e-4321-b73e-8433a3230bc7",
+    "name": "Gestor De Biblioteca",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53287628",
+    "_collection_link": "https://go.postman.co/collection/53287628-d550ea3f-356e-4321-b73e-8433a3230bc7?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "API Gateway",
+      "item": [
+        {
+          "name": "Grupo 1",
+          "item": [
+            {
+              "name": "Géneros",
+              "item": [
+                {
+                  "name": "V1",
+                  "item": [
+                    {
+                      "name": "Obtener géneros",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/generos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "generos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar género por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/generos/{{idGenero}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "generos",
+                            "{{idGenero}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear género",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Fantástico\",\r\n    \"descripcion\":\"Género orientado a las fantasías y magia\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/generos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "generos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar género por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Misterio\",\r\n    \"descripcion\":\"Genero orientado a los misterios\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/generos/{{idGenero}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "generos",
+                            "{{idGenero}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar género por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/generos/{{idGenero}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "generos",
+                            "{{idGenero}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "V2",
+                  "item": [
+                    {
+                      "name": "Obtener géneros",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/generos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "generos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar género por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/generos/{{idGenero}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "generos",
+                            "{{idGenero}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear género",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Fantástico\",\r\n    \"descripcion\":\"Género orientado a las fantasías y magia\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/generos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "generos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar género por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Misterio\",\r\n    \"descripcion\":\"Genero orientado a los misterios\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/generos/{{idGenero}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "generos",
+                            "{{idGenero}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar género por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/generos/{{idGenero}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "generos",
+                            "{{idGenero}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Libros",
+              "item": [
+                {
+                  "name": "V1",
+                  "item": [
+                    {
+                      "name": "Obtener libros",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/libros",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "libros"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar libro por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/libros/{{idLibro}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "libros",
+                            "{{idLibro}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear libro",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"titulo\":\"Pesares del amor\",\r\n    \"isbn\":\"76764-232-6347\",\r\n    \"fechaPublicacion\":\"2022-05-11\",\r\n    \"idAutor\":3,\r\n    \"idGenero\":1\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/libros",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "libros"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar Libro",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"titulo\":\"Liberacion emocional\",\r\n    \"isbn\":\"99999999999\",\r\n    \"fechaPublicacion\":\"2011-11-11\",\r\n    \"idAutor\":1,\r\n    \"idGenero\":2\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/libros/{{idLibro}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "libros",
+                            "{{idLibro}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar libro por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/libros/{{idLibro}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "libros",
+                            "{{idLibro}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "V2",
+                  "item": [
+                    {
+                      "name": "Obtener libros",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/libros",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "libros"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar libro por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/libros/{{idLibro}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "libros",
+                            "{{idLibro}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear libro",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"titulo\":\"Alegrias de la vida\",\r\n    \"isbn\":\"444-444-444\",\r\n    \"fechaPublicacion\":\"2024-04-04\",\r\n    \"idAutor\":4,\r\n    \"idGenero\":4\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/libros",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "libros"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar libro por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"titulo\":\"Malestares de la vida\",\r\n    \"isbn\":\"555-555-555\",\r\n    \"fechaPublicacion\":\"2025-05-05\",\r\n    \"idAutor\":5,\r\n    \"idGenero\":5\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/libros/{{idLibro}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "libros",
+                            "{{idLibro}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar libro por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/libros/{{idLibro}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "libros",
+                            "{{idLibro}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Autores",
+              "item": [
+                {
+                  "name": "V1",
+                  "item": [
+                    {
+                      "name": "Obtener autores",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/autores",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "autores"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar autor por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/autores/{{idAutor}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "autores",
+                            "{{idAutor}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear autor",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Ernesto\",\r\n    \"fechaNacimiento\":\"2001-04-23\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/autores",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "autores"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar autor por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Gregorio\",\r\n    \"fechaNacimiento\":\"2011-11-11\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/autores/{{idAutor}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "autores",
+                            "{{idAutor}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar autor por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/autores/{{idAutor}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "autores",
+                            "{{idAutor}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "V2",
+                  "item": [
+                    {
+                      "name": "Obtener autores",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/autores",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "autores"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar autor por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/autores/{{idAutor}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "autores",
+                            "{{idAutor}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear autor",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Ernesto\",\r\n    \"fechaNacimiento\":\"2001-04-23\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/autores",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "autores"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar autor por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Gregorio\",\r\n    \"fechaNacimiento\":\"2011-11-11\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/autores/{{idAutor}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "autores",
+                            "{{idAutor}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar autor por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/autores/{{idAutor}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "autores",
+                            "{{idAutor}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grupo 2",
+          "item": [
+            {
+              "name": "Bibliotecarios",
+              "item": [
+                {
+                  "name": "V1",
+                  "item": [
+                    {
+                      "name": "Obtener bibliotecarios",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/bibliotecarios",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "bibliotecarios"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar bibliotecario por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/bibliotecarios/{{idBibliotecario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "bibliotecarios",
+                            "{{idBibliotecario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear bibliotecario",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Carlos\",\r\n    \"apellido\":\"Soto\",\r\n    \"edad\":44\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/bibliotecarios",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "bibliotecarios"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar bibliotecario por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Estefano\",\r\n    \"apellido\":\"Soto\",\r\n    \"edad\":44\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/bibliotecarios/{{idBibliotecario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "bibliotecarios",
+                            "{{idBibliotecario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar bibliotecario por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/bibliotecarios/{{idBibliotecario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "bibliotecarios",
+                            "{{idBibliotecario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "V2",
+                  "item": [
+                    {
+                      "name": "Obtener bibliotecarios",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/bibliotecarios",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "bibliotecarios"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar bibliotecario por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/bibliotecarios/{{idBibliotecario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "bibliotecarios",
+                            "{{idBibliotecario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear bibliotecario",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Carlos\",\r\n    \"apellido\":\"Soto\",\r\n    \"edad\":44\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/bibliotecarios",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "bibliotecarios"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar bibliotecario por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Estefano\",\r\n    \"apellido\":\"Soto\",\r\n    \"edad\":50\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/bibliotecarios/{{idBibliotecario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "bibliotecarios",
+                            "{{idBibliotecario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar bibliotecario por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/bibliotecarios/{{idBibliotecario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "bibliotecarios",
+                            "{{idBibliotecario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Turnos",
+              "item": [
+                {
+                  "name": "V1",
+                  "item": [
+                    {
+                      "name": "Obtener turnos",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/turnos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "turnos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar turno por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/turnos/{{idTurno}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "turnos",
+                            "{{idTurno}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear turno",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"turno\": \"Turno Tarde\",\r\n    \"horaEntrada\": \"14:00:00\",\r\n    \"horaSalida\": \"22:00:00\",\r\n    \"idBibliotecario\": 4\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/turnos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "turnos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar turno por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"turno\": \"Turno Noche\",\r\n    \"horaEntrada\": \"19:00:00\",\r\n    \"horaSalida\": \"22:00:00\",\r\n    \"idBibliotecario\": 3\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/turnos/{{idTurno}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "turnos",
+                            "{{idTurno}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar turno por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/turnos/{{idTurno}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "turnos",
+                            "{{idTurno}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "V2",
+                  "item": [
+                    {
+                      "name": "Obtener turnos",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/turnos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "turnos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar turno por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/turnos/{{idTurno}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "turnos",
+                            "{{idTurno}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear turno",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"turno\": \"Turno Mañana\",\r\n    \"horaEntrada\": \"09:00:00\",\r\n    \"horaSalida\": \"14:00:00\",\r\n    \"idBibliotecario\": 3\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/turnos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "turnos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar turno por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"turno\": \"Turno Tarde\",\r\n    \"horaEntrada\": \"14:00:00\",\r\n    \"horaSalida\": \"19:00:00\",\r\n    \"idBibliotecario\": 2\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/turnos/{{idTurno}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "turnos",
+                            "{{idTurno}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar turno por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/turnos/{{idTurno}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "turnos",
+                            "{{idTurno}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grupo 3",
+          "item": [
+            {
+              "name": "Teléfonos",
+              "item": [
+                {
+                  "name": "V1",
+                  "item": [
+                    {
+                      "name": "Obtener teléfonos",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/telefonos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "telefonos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar teléfono por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/telefonos/{{idTelefono}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "telefonos",
+                            "{{idTelefono}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear teléfono",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": 999999999,\r\n    \"tipo\": \"Fijo\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/telefonos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "telefonos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar teléfono por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": 111111111,\r\n    \"tipo\": \"Casa\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/telefonos/{{idTelefono}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "telefonos",
+                            "{{idTelefono}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar teléfono por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/telefonos/{{idTelefono}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "telefonos",
+                            "{{idTelefono}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "V2",
+                  "item": [
+                    {
+                      "name": "Obtener teléfono",
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      },
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": 999999999,\r\n    \"tipo\": \"Fijo\"\r\n}"
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/telefonos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "telefonos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar teléfono por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/telefonos/{{idTelefono}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "telefonos",
+                            "{{idTelefono}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear teléfono",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": 999999999,\r\n    \"tipo\": \"Fijo\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/telefonos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "telefonos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar teléfono por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": 111111111,\r\n    \"tipo\": \"Casa\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/telefonos/{{idTelefono}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "telefonos",
+                            "{{idTelefono}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar teléfono por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/telefonos/{{idTelefono}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "telefonos",
+                            "{{idTelefono}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Direcciones",
+              "item": [
+                {
+                  "name": "V1",
+                  "item": [
+                    {
+                      "name": "Obtener direcciones",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/direcciones",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "direcciones"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar dirección por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/direcciones/{{idDireccion}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "direcciones",
+                            "{{idDireccion}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear dirección",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"direccion\": \"El Libertador 1145\",\r\n    \"comuna\": \"El Bosque\",\r\n    \"region\": \"Santiago\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/direcciones",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "direcciones"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar dirección por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"direccion\": \"Calle Falsa 123\",\r\n    \"comuna\": \"SpringField\",\r\n    \"region\": \"EE.UU.\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/direcciones/{{idDireccion}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "direcciones",
+                            "{{idDireccion}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar dirección por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/direcciones/{{idDireccion}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "direcciones",
+                            "{{idDireccion}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "V2",
+                  "item": [
+                    {
+                      "name": "Obtener direcciones",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/direcciones",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "direcciones"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar dirección por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/direcciones/{{idDireccion}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "direcciones",
+                            "{{idDireccion}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear dirección",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"direccion\": \"El Libertador 1145\",\r\n    \"comuna\": \"El Bosque\",\r\n    \"region\": \"Santiago\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/direcciones",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "direcciones"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar dirección por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"direccion\": \"Calle Falsa 123\",\r\n    \"comuna\": \"SpringField\",\r\n    \"region\": \"EE.UU.\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/direcciones/{{idDireccion}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "direcciones",
+                            "{{idDireccion}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar dirección por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/direcciones/{{idDireccion}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "direcciones",
+                            "{{idDireccion}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Usuarios",
+              "item": [
+                {
+                  "name": "V1",
+                  "item": [
+                    {
+                      "name": "Obtener usuarios",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/usuarios",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "usuarios"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar usuario por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/usuarios/{{idUsuario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "usuarios",
+                            "{{idUsuario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear usuario",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\": \"Bayron\",\r\n    \"apellido\": \"Urrutia\",\r\n    \"gmail\": \"bayron221906@gmail.com\",\r\n    \"idTelefono\":1,\r\n    \"idDireccion\":1\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/usuarios",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "usuarios"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar usuario por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\": \"Urrutia\",\r\n    \"apellido\": \"Bayron\",\r\n    \"gmail\": \"bayron333333@gmail.com\",\r\n    \"idTelefono\":3,\r\n    \"idDireccion\":3\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/usuarios/{{idUsuario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "usuarios",
+                            "{{idUsuario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar usuario por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/usuarios/{{idUsuario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "usuarios",
+                            "{{idUsuario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "V2",
+                  "item": [
+                    {
+                      "name": "Obtener usuarios",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/usuarios",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "usuarios"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar usuario por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/usuarios/{{idUsuario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "usuarios",
+                            "{{idUsuario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear usuario",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\": \"Bayron\",\r\n    \"apellido\": \"Urrutia\",\r\n    \"gmail\": \"bayron221906@gmail.com\",\r\n    \"idTelefono\":1,\r\n    \"idDireccion\":1\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/usuarios",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "usuarios"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar usuario por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\": \"Urrutia\",\r\n    \"apellido\": \"Bayron\",\r\n    \"gmail\": \"bayron333333@gmail.com\",\r\n    \"idTelefono\":3,\r\n    \"idDireccion\":3\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/usuarios/{{idUsuario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "usuarios",
+                            "{{idUsuario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar usuario por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/usuarios/{{idUsuario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "usuarios",
+                            "{{idUsuario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grupo 4",
+          "item": [
+            {
+              "name": "Pisos",
+              "item": [
+                {
+                  "name": "V1",
+                  "item": [
+                    {
+                      "name": "Obtener pisos",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/pisos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "pisos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar piso por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/pisos/{{idPiso}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "pisos",
+                            "{{idPiso}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear piso",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": \"-1\",\r\n    \"descripcion\": \"Piso subterráneo de implementos.\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/pisos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "pisos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar piso por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": \"-99\",\r\n    \"descripcion\": \"Último piso negativo.\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/pisos/{{idPiso}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "pisos",
+                            "{{idPiso}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar piso por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": \"-1\",\r\n    \"descripcion\": \"Piso subterráneo de implementos.\"\r\n}"
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v1/pisos/{{idPiso}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v1",
+                            "pisos",
+                            "{{idPiso}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "V2",
+                  "item": [
+                    {
+                      "name": "Obtener pisos",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/pisos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "pisos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar piso por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/pisos/{{idPiso}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "pisos",
+                            "{{idPiso}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear piso",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": \"-1\",\r\n    \"descripcion\": \"Piso subterráneo de implementos.\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/pisos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "pisos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar piso por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": \"-99\",\r\n    \"descripcion\": \"Último piso negativo.\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/pisos/{{idPiso}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "pisos",
+                            "{{idPiso}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar piso por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": \"-1\",\r\n    \"descripcion\": \"Piso subterráneo de implementos.\"\r\n}"
+                        },
+                        "url": {
+                          "raw": "http://localhost:8080/api/v2/pisos/{{idPiso}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8080",
+                          "path": [
+                            "api",
+                            "v2",
+                            "pisos",
+                            "{{idPiso}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Microservicios Directos",
+      "item": [
+        {
+          "name": "Grupo 1",
+          "item": [
+            {
+              "name": "Autores",
+              "item": [
+                {
+                  "name": "V1",
+                  "item": [
+                    {
+                      "name": "Obtener autores",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8081/api/v1/autores",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8081",
+                          "path": [
+                            "api",
+                            "v1",
+                            "autores"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar autor por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8081/api/v1/autores/{{idAutor}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8081",
+                          "path": [
+                            "api",
+                            "v1",
+                            "autores",
+                            "{{idAutor}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear autor",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Ernesto\",\r\n    \"fechaNacimiento\":\"2001-04-23\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8081/api/v1/autores",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8081",
+                          "path": [
+                            "api",
+                            "v1",
+                            "autores"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar autor por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Gregorio\",\r\n    \"fechaNacimiento\":\"2011-11-11\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8081/api/v1/autores/{{idAutor}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8081",
+                          "path": [
+                            "api",
+                            "v1",
+                            "autores",
+                            "{{idAutor}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar autor por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8081/api/v1/autores/{{idAutor}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8081",
+                          "path": [
+                            "api",
+                            "v1",
+                            "autores",
+                            "{{idAutor}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "V2",
+                  "item": [
+                    {
+                      "name": "Obtener autores",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8081/api/v2/autores",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8081",
+                          "path": [
+                            "api",
+                            "v2",
+                            "autores"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar autor por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8081/api/v2/autores/{{idAutor}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8081",
+                          "path": [
+                            "api",
+                            "v2",
+                            "autores",
+                            "{{idAutor}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear autor",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Ernesto\",\r\n    \"fechaNacimiento\":\"2001-04-23\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8081/api/v2/autores",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8081",
+                          "path": [
+                            "api",
+                            "v2",
+                            "autores"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar autor por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Gregorio\",\r\n    \"fechaNacimiento\":\"2011-11-11\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8081/api/v2/autores/{{idAutor}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8081",
+                          "path": [
+                            "api",
+                            "v2",
+                            "autores",
+                            "{{idAutor}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar autor por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8081/api/v2/autores/{{idAutor}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8081",
+                          "path": [
+                            "api",
+                            "v2",
+                            "autores",
+                            "{{idAutor}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Géneros",
+              "item": [
+                {
+                  "name": "V1",
+                  "item": [
+                    {
+                      "name": "Obtener géneros",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8082/api/v1/generos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8082",
+                          "path": [
+                            "api",
+                            "v1",
+                            "generos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar género por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8082/api/v1/generos/{{idGenero}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8082",
+                          "path": [
+                            "api",
+                            "v1",
+                            "generos",
+                            "{{idGenero}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear género",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Fantástico\",\r\n    \"descripcion\":\"Género orientado a las fantasías y magia\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8082/api/v1/generos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8082",
+                          "path": [
+                            "api",
+                            "v1",
+                            "generos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar género por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Misterio\",\r\n    \"descripcion\":\"Genero orientado a los misterios\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8082/api/v1/generos/{{idGenero}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8082",
+                          "path": [
+                            "api",
+                            "v1",
+                            "generos",
+                            "{{idGenero}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar género por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8082/api/v1/generos/{{idGenero}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8082",
+                          "path": [
+                            "api",
+                            "v1",
+                            "generos",
+                            "{{idGenero}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "V2",
+                  "item": [
+                    {
+                      "name": "Obtener géneros",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8082/api/v2/generos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8082",
+                          "path": [
+                            "api",
+                            "v2",
+                            "generos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar género por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8082/api/v2/generos/{{idGenero}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8082",
+                          "path": [
+                            "api",
+                            "v2",
+                            "generos",
+                            "{{idGenero}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear género",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Fantástico\",\r\n    \"descripcion\":\"Género orientado a las fantasías y magia\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8082/api/v2/generos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8082",
+                          "path": [
+                            "api",
+                            "v2",
+                            "generos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar género por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Misterio\",\r\n    \"descripcion\":\"Genero orientado a los misterios\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8082/api/v2/generos/{{idGenero}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8082",
+                          "path": [
+                            "api",
+                            "v2",
+                            "generos",
+                            "{{idGenero}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar género por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8082/api/v2/generos/{{idGenero}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8082",
+                          "path": [
+                            "api",
+                            "v2",
+                            "generos",
+                            "{{idGenero}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Libros",
+              "item": [
+                {
+                  "name": "V1",
+                  "item": [
+                    {
+                      "name": "Obtener libros",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8083/api/v1/libros",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8083",
+                          "path": [
+                            "api",
+                            "v1",
+                            "libros"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar libro por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8083/api/v1/libros/{{idLibro}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8083",
+                          "path": [
+                            "api",
+                            "v1",
+                            "libros",
+                            "{{idLibro}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear libro",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"titulo\":\"Pesares del amor\",\r\n    \"isbn\":\"76764-232-6347\",\r\n    \"fechaPublicacion\":\"2022-05-11\",\r\n    \"idAutor\":3,\r\n    \"idGenero\":1\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8083/api/v1/libros",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8083",
+                          "path": [
+                            "api",
+                            "v1",
+                            "libros"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar Libro",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"titulo\":\"Liberacion emocional\",\r\n    \"isbn\":\"99999999999\",\r\n    \"fechaPublicacion\":\"2011-11-11\",\r\n    \"idAutor\":1,\r\n    \"idGenero\":2\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8083/api/v1/libros/{{idLibro}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8083",
+                          "path": [
+                            "api",
+                            "v1",
+                            "libros",
+                            "{{idLibro}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar libro por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8083/api/v1/libros/11",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8083",
+                          "path": [
+                            "api",
+                            "v1",
+                            "libros",
+                            "11"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "V2",
+                  "item": [
+                    {
+                      "name": "Obtener libros",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8083/api/v2/libros",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8083",
+                          "path": [
+                            "api",
+                            "v2",
+                            "libros"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar libro por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8083/api/v2/libros/{{idLibro}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8083",
+                          "path": [
+                            "api",
+                            "v2",
+                            "libros",
+                            "{{idLibro}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear libro",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"titulo\":\"Alegrias de la vida\",\r\n    \"isbn\":\"444-444-444\",\r\n    \"fechaPublicacion\":\"2024-04-04\",\r\n    \"idAutor\":4,\r\n    \"idGenero\":4\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8083/api/v2/libros",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8083",
+                          "path": [
+                            "api",
+                            "v2",
+                            "libros"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar libro por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"titulo\":\"Malestares de la vida\",\r\n    \"isbn\":\"555-555-555\",\r\n    \"fechaPublicacion\":\"2025-05-05\",\r\n    \"idAutor\":5,\r\n    \"idGenero\":5\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8083/api/v2/libros/{{idLibro}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8083",
+                          "path": [
+                            "api",
+                            "v2",
+                            "libros",
+                            "{{idLibro}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar libro por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8083/api/v2/libros/{{idLibro}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8083",
+                          "path": [
+                            "api",
+                            "v2",
+                            "libros",
+                            "{{idLibro}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grupo 2",
+          "item": [
+            {
+              "name": "Bibliotecarios",
+              "item": [
+                {
+                  "name": "V1",
+                  "item": [
+                    {
+                      "name": "Obtener bibliotecarios",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8084/api/v1/bibliotecarios",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8084",
+                          "path": [
+                            "api",
+                            "v1",
+                            "bibliotecarios"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar bibliotecario por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8084/api/v1/bibliotecarios/{{idBibliotecario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8084",
+                          "path": [
+                            "api",
+                            "v1",
+                            "bibliotecarios",
+                            "{{idBibliotecario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear bibliotecario",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Carlos\",\r\n    \"apellido\":\"Soto\",\r\n    \"edad\":44\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8084/api/v1/bibliotecarios",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8084",
+                          "path": [
+                            "api",
+                            "v1",
+                            "bibliotecarios"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar bibliotecario por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Estefano\",\r\n    \"apellido\":\"Soto\",\r\n    \"edad\":44\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8084/api/v1/bibliotecarios/{{idBibliotecario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8084",
+                          "path": [
+                            "api",
+                            "v1",
+                            "bibliotecarios",
+                            "{{idBibliotecario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar bibliotecario por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8084/api/v1/bibliotecarios/{{idBibliotecario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8084",
+                          "path": [
+                            "api",
+                            "v1",
+                            "bibliotecarios",
+                            "{{idBibliotecario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "V2",
+                  "item": [
+                    {
+                      "name": "Obtener bibliotecarios",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8084/api/v2/bibliotecarios",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8084",
+                          "path": [
+                            "api",
+                            "v2",
+                            "bibliotecarios"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar bibliotecario por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8084/api/v2/bibliotecarios/{{idBibliotecario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8084",
+                          "path": [
+                            "api",
+                            "v2",
+                            "bibliotecarios",
+                            "{{idBibliotecario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear bibliotecario",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Carlos\",\r\n    \"apellido\":\"Soto\",\r\n    \"edad\":44\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8084/api/v2/bibliotecarios",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8084",
+                          "path": [
+                            "api",
+                            "v2",
+                            "bibliotecarios"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar bibliotecario por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\":\"Estefano\",\r\n    \"apellido\":\"Soto\",\r\n    \"edad\":50\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8084/api/v2/bibliotecarios/{{idBibliotecario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8084",
+                          "path": [
+                            "api",
+                            "v2",
+                            "bibliotecarios",
+                            "{{idBibliotecario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar bibliotecario por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8084/api/v2/bibliotecarios/{{idBibliotecario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8084",
+                          "path": [
+                            "api",
+                            "v2",
+                            "bibliotecarios",
+                            "{{idBibliotecario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Turnos",
+              "item": [
+                {
+                  "name": "V1",
+                  "item": [
+                    {
+                      "name": "Obtener turnos",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8085/api/v1/turnos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8085",
+                          "path": [
+                            "api",
+                            "v1",
+                            "turnos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar turno por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8085/api/v1/turnos/{{idTurno}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8085",
+                          "path": [
+                            "api",
+                            "v1",
+                            "turnos",
+                            "{{idTurno}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear turno",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"turno\": \"Turno Tarde\",\r\n    \"horaEntrada\": \"14:00:00\",\r\n    \"horaSalida\": \"22:00:00\",\r\n    \"idBibliotecario\": 4\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8085/api/v1/turnos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8085",
+                          "path": [
+                            "api",
+                            "v1",
+                            "turnos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar turno por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"turno\": \"Turno Noche\",\r\n    \"horaEntrada\": \"19:00:00\",\r\n    \"horaSalida\": \"22:00:00\",\r\n    \"idBibliotecario\": 3\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8085/api/v1/turnos/{{idTurno}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8085",
+                          "path": [
+                            "api",
+                            "v1",
+                            "turnos",
+                            "{{idTurno}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar turno por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8085/api/v1/turnos/{{idTurno}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8085",
+                          "path": [
+                            "api",
+                            "v1",
+                            "turnos",
+                            "{{idTurno}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "V2",
+                  "item": [
+                    {
+                      "name": "Obtener turnos",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8085/api/v2/turnos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8085",
+                          "path": [
+                            "api",
+                            "v2",
+                            "turnos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar turno por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8085/api/v2/turnos/{{idTurno}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8085",
+                          "path": [
+                            "api",
+                            "v2",
+                            "turnos",
+                            "{{idTurno}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear turno",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"turno\": \"Turno Mañana\",\r\n    \"horaEntrada\": \"09:00:00\",\r\n    \"horaSalida\": \"14:00:00\",\r\n    \"idBibliotecario\": 3\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8085/api/v2/turnos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8085",
+                          "path": [
+                            "api",
+                            "v2",
+                            "turnos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar turno por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"turno\": \"Turno Tarde\",\r\n    \"horaEntrada\": \"14:00:00\",\r\n    \"horaSalida\": \"19:00:00\",\r\n    \"idBibliotecario\": 2\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8085/api/v2/turnos/{{idTurno}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8085",
+                          "path": [
+                            "api",
+                            "v2",
+                            "turnos",
+                            "{{idTurno}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar turno por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8085/api/v2/turnos/{{idTurno}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8085",
+                          "path": [
+                            "api",
+                            "v2",
+                            "turnos",
+                            "{{idTurno}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grupo 3",
+          "item": [
+            {
+              "name": "Teléfonos",
+              "item": [
+                {
+                  "name": "V1",
+                  "item": [
+                    {
+                      "name": "Obtener teléfonos",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8086/api/v1/telefonos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8086",
+                          "path": [
+                            "api",
+                            "v1",
+                            "telefonos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar teléfono por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8086/api/v1/telefonos/{{idTelefono}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8086",
+                          "path": [
+                            "api",
+                            "v1",
+                            "telefonos",
+                            "{{idTelefono}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear teléfono",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": 999999999,\r\n    \"tipo\": \"Fijo\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8086/api/v1/telefonos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8086",
+                          "path": [
+                            "api",
+                            "v1",
+                            "telefonos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar teléfono por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": 111111111,\r\n    \"tipo\": \"Casa\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8086/api/v1/telefonos/{{idTelefono}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8086",
+                          "path": [
+                            "api",
+                            "v1",
+                            "telefonos",
+                            "{{idTelefono}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar teléfono por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8086/api/v1/telefonos/{{idTelefono}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8086",
+                          "path": [
+                            "api",
+                            "v1",
+                            "telefonos",
+                            "{{idTelefono}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "V2",
+                  "item": [
+                    {
+                      "name": "Obtener teléfono",
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      },
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": 999999999,\r\n    \"tipo\": \"Fijo\"\r\n}"
+                        },
+                        "url": {
+                          "raw": "http://localhost:8086/api/v2/telefonos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8086",
+                          "path": [
+                            "api",
+                            "v2",
+                            "telefonos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar teléfono por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8086/api/v2/telefonos/{{idTelefono}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8086",
+                          "path": [
+                            "api",
+                            "v2",
+                            "telefonos",
+                            "{{idTelefono}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear teléfono",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": 999999999,\r\n    \"tipo\": \"Fijo\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8086/api/v2/telefonos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8086",
+                          "path": [
+                            "api",
+                            "v2",
+                            "telefonos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar teléfono por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": 111111111,\r\n    \"tipo\": \"Casa\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8086/api/v2/telefonos/{{idTelefono}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8086",
+                          "path": [
+                            "api",
+                            "v2",
+                            "telefonos",
+                            "{{idTelefono}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar teléfono por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8086/api/v2/telefonos/{{idTelefono}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8086",
+                          "path": [
+                            "api",
+                            "v2",
+                            "telefonos",
+                            "{{idTelefono}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Direcciones",
+              "item": [
+                {
+                  "name": "V1",
+                  "item": [
+                    {
+                      "name": "Obtener direcciones",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8087/api/v1/direcciones",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8087",
+                          "path": [
+                            "api",
+                            "v1",
+                            "direcciones"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar dirección por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8087/api/v1/direcciones/{{idDireccion}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8087",
+                          "path": [
+                            "api",
+                            "v1",
+                            "direcciones",
+                            "{{idDireccion}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear dirección",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"direccion\": \"El Libertador 1145\",\r\n    \"comuna\": \"El Bosque\",\r\n    \"region\": \"Santiago\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8087/api/v1/direcciones",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8087",
+                          "path": [
+                            "api",
+                            "v1",
+                            "direcciones"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar dirección por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"direccion\": \"Calle Falsa 123\",\r\n    \"comuna\": \"SpringField\",\r\n    \"region\": \"EE.UU.\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8087/api/v1/direcciones/{{idDireccion}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8087",
+                          "path": [
+                            "api",
+                            "v1",
+                            "direcciones",
+                            "{{idDireccion}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar dirección por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8087/api/v1/direcciones/{{idDireccion}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8087",
+                          "path": [
+                            "api",
+                            "v1",
+                            "direcciones",
+                            "{{idDireccion}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "V2",
+                  "item": [
+                    {
+                      "name": "Obtener direcciones",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8087/api/v2/direcciones",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8087",
+                          "path": [
+                            "api",
+                            "v2",
+                            "direcciones"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar dirección por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8087/api/v2/direcciones/{{idDireccion}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8087",
+                          "path": [
+                            "api",
+                            "v2",
+                            "direcciones",
+                            "{{idDireccion}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear dirección",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"direccion\": \"El Libertador 1145\",\r\n    \"comuna\": \"El Bosque\",\r\n    \"region\": \"Santiago\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8087/api/v2/direcciones",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8087",
+                          "path": [
+                            "api",
+                            "v2",
+                            "direcciones"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar dirección por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"direccion\": \"Calle Falsa 123\",\r\n    \"comuna\": \"SpringField\",\r\n    \"region\": \"EE.UU.\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8087/api/v2/direcciones/{{idDireccion}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8087",
+                          "path": [
+                            "api",
+                            "v2",
+                            "direcciones",
+                            "{{idDireccion}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar dirección por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8087/api/v2/direcciones/{{idDireccion}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8087",
+                          "path": [
+                            "api",
+                            "v2",
+                            "direcciones",
+                            "{{idDireccion}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Usuarios",
+              "item": [
+                {
+                  "name": "V1",
+                  "item": [
+                    {
+                      "name": "Obtener usuarios",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8088/api/v1/usuarios",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8088",
+                          "path": [
+                            "api",
+                            "v1",
+                            "usuarios"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar usuario por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8088/api/v1/usuarios/{{idUsuario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8088",
+                          "path": [
+                            "api",
+                            "v1",
+                            "usuarios",
+                            "{{idUsuario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear usuario",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\": \"Bayron\",\r\n    \"apellido\": \"Urrutia\",\r\n    \"gmail\": \"bayron221906@gmail.com\",\r\n    \"idTelefono\":1,\r\n    \"idDireccion\":1\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8088/api/v1/usuarios",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8088",
+                          "path": [
+                            "api",
+                            "v1",
+                            "usuarios"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar usuario por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\": \"Urrutia\",\r\n    \"apellido\": \"Bayron\",\r\n    \"gmail\": \"bayron333333@gmail.com\",\r\n    \"idTelefono\":3,\r\n    \"idDireccion\":3\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8088/api/v1/usuarios/{{idUsuario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8088",
+                          "path": [
+                            "api",
+                            "v1",
+                            "usuarios",
+                            "{{idUsuario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar usuario por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8088/api/v1/usuarios/{{idUsuario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8088",
+                          "path": [
+                            "api",
+                            "v1",
+                            "usuarios",
+                            "{{idUsuario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "V2",
+                  "item": [
+                    {
+                      "name": "Obtener usuarios",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8088/api/v2/usuarios",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8088",
+                          "path": [
+                            "api",
+                            "v2",
+                            "usuarios"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar usuario por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8088/api/v2/usuarios/{{idUsuario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8088",
+                          "path": [
+                            "api",
+                            "v2",
+                            "usuarios",
+                            "{{idUsuario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear usuario",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\": \"Bayron\",\r\n    \"apellido\": \"Urrutia\",\r\n    \"gmail\": \"bayron221906@gmail.com\",\r\n    \"idTelefono\":1,\r\n    \"idDireccion\":1\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8088/api/v2/usuarios",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8088",
+                          "path": [
+                            "api",
+                            "v2",
+                            "usuarios"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar usuario por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"nombre\": \"Urrutia\",\r\n    \"apellido\": \"Bayron\",\r\n    \"gmail\": \"bayron333333@gmail.com\",\r\n    \"idTelefono\":3,\r\n    \"idDireccion\":3\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8088/api/v2/usuarios/{{idUsuario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8088",
+                          "path": [
+                            "api",
+                            "v2",
+                            "usuarios",
+                            "{{idUsuario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar usuario por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8088/api/v2/usuarios/{{idUsuario}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8088",
+                          "path": [
+                            "api",
+                            "v2",
+                            "usuarios",
+                            "{{idUsuario}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grupo 4",
+          "item": [
+            {
+              "name": "Pisos",
+              "item": [
+                {
+                  "name": "V1",
+                  "item": [
+                    {
+                      "name": "Obtener pisos",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8089/api/v1/pisos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8089",
+                          "path": [
+                            "api",
+                            "v1",
+                            "pisos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar piso por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8089/api/v1/pisos/{{idPiso}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8089",
+                          "path": [
+                            "api",
+                            "v1",
+                            "pisos",
+                            "{{idPiso}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear piso",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": \"-1\",\r\n    \"descripcion\": \"Piso subterráneo de implementos.\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8089/api/v1/pisos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8089",
+                          "path": [
+                            "api",
+                            "v1",
+                            "pisos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar piso por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": \"-99\",\r\n    \"descripcion\": \"Último piso negativo.\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8089/api/v1/pisos/{{idPiso}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8089",
+                          "path": [
+                            "api",
+                            "v1",
+                            "pisos",
+                            "{{idPiso}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar piso por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": \"-1\",\r\n    \"descripcion\": \"Piso subterráneo de implementos.\"\r\n}"
+                        },
+                        "url": {
+                          "raw": "http://localhost:8089/api/v1/pisos/{{idPiso}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8089",
+                          "path": [
+                            "api",
+                            "v1",
+                            "pisos",
+                            "{{idPiso}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                },
+                {
+                  "name": "V2",
+                  "item": [
+                    {
+                      "name": "Obtener pisos",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8089/api/v2/pisos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8089",
+                          "path": [
+                            "api",
+                            "v2",
+                            "pisos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Buscar piso por ID",
+                      "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "http://localhost:8089/api/v2/pisos/{{idPiso}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8089",
+                          "path": [
+                            "api",
+                            "v2",
+                            "pisos",
+                            "{{idPiso}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Crear piso",
+                      "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": \"-1\",\r\n    \"descripcion\": \"Piso subterráneo de implementos.\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8089/api/v2/pisos",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8089",
+                          "path": [
+                            "api",
+                            "v2",
+                            "pisos"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Actualizar piso por ID",
+                      "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": \"-99\",\r\n    \"descripcion\": \"Último piso negativo.\"\r\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "http://localhost:8089/api/v2/pisos/{{idPiso}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8089",
+                          "path": [
+                            "api",
+                            "v2",
+                            "pisos",
+                            "{{idPiso}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    },
+                    {
+                      "name": "Eliminar piso por ID",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\r\n    \"numero\": \"-1\",\r\n    \"descripcion\": \"Piso subterráneo de implementos.\"\r\n}"
+                        },
+                        "url": {
+                          "raw": "http://localhost:8089/api/v2/pisos/{{idPiso}}",
+                          "protocol": "http",
+                          "host": [
+                            "localhost"
+                          ],
+                          "port": "8089",
+                          "path": [
+                            "api",
+                            "v2",
+                            "pisos",
+                            "{{idPiso}}"
+                          ]
+                        }
+                      },
+                      "response": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
