@@ -39,4 +39,4 @@ server:
 # WebClient Config
 services:
   pisos:
-    url: http://localhost:8089
+    url: http://piso-service:8089
