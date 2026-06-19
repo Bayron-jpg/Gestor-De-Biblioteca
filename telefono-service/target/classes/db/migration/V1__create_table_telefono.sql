@@ -1,0 +1,5 @@
+CREATE TABLE telefono (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    numero INTEGER NOT NULL,
+    tipo VARCHAR(20) NOT NULL
+);
