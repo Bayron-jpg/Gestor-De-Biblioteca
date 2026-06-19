@@ -39,6 +39,6 @@ server:
 # WebClient Config
 services:
   telefonos:
-    url: http://localhost:8086
+    url: http://telefono-service:8086
   direcciones:
-    url: http://localhost:8087
+    url: http://direccion-service:8087
