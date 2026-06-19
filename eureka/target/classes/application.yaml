@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: eureka
+
+eureka:
+  client:
+    # Evita que el propio servidor intente registrarse como si fuera un cliente
+    register-with-eureka: false
+    # Evita que el servidor intente descargar las copias del registro localmente
+    fetch-registry: false
+    service-url:
+      # Define la dirección base donde los microservicios se conectarán
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 8761
