@@ -1,0 +1,5 @@
+CREATE TABLE genero (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(60) NOT NULL,
+    descripcion VARCHAR(120) NOT NULL
+);
